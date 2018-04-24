@@ -1,6 +1,6 @@
 [
   {
-    "source":"http://fairplayground.info/datasources/FCLN",
-    "autoselect": true
+    "source":"http://fairplayground.info/datasources/SOURCE_ID",
+    "autoselect": false
   }
 ]
