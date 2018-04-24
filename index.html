@@ -1,0 +1,126 @@
+ <html lang="en">
+   <head>
+     <title>
+     </title>
+     <meta charset="utf-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="description" content="">
+     <meta name="author" content="">
+     <meta name="robots" content="noindex, nofollow">
+
+     <link href="assets/css/bootstap.min.css" rel="stylesheet">
+     <link href="assets/css/style.css" rel="stylesheet">
+     <link href="http://fairplayground.info/assets/css/style.css" rel="stylesheet">
+
+   </head>
+   <body>
+  <form method="POST">
+    <input type="hidden" id="J" name="J" value="">
+    <input type="hidden" id="approve" name="approve" value="">
+    <input type="hidden" id="cancel" name="cancel" value="">
+    <div class="container">
+      <div class="row tabs">
+        <ul>
+          <li id="selectsource">
+            select source
+          </li>
+          <li id="map" class="d-none">
+            uMap
+          </li>
+          <li id="items" class="d-none">
+            items
+          </li>
+          <li id="openrequests" class="d-none">
+            pending changes
+          </li>
+          <li id="history" class="d-none">
+            history of changes
+          </li>
+          <li id="API" class="d-none">
+            API & Info
+          </li>
+
+        </ul>
+      </div>
+
+      <section class="selectsource d-none">
+        <div class="row">
+          <ul>
+          </ul>
+        </div>
+
+      </section>
+
+      <section class="openrequests d-none">
+        <div class="row">
+          <div class="col">
+            <input type="text" class="form-control authcode" placeholder="code" size="6" maxlength="6">
+          </div>
+        </div>
+        <div class="row">
+
+        </div>
+      </section>
+
+
+      <section class="items d-none">
+        <div class="row">
+          <div class="col">
+            <h3></h3>
+          </div>
+        </div>
+        <div class="row">
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+
+              </div>
+              <div class="modal-body">
+                ...
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary d-none" id="request_changes">request changes</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+
+      <section class="history d-none">
+        <div class="row">
+          <ul>
+          </ul>
+        </div>
+      </section>
+
+      <section class="API d-none">
+      </section>
+
+      <section class="map d-none">
+        <iframe id="umap" width="100%" height="0" frameBorder="0" src=""></iframe>
+      </section>
+
+
+
+    </div>
+  </form>
+
+
+
+  <script src="assets/js/jquery-1.11.2.min.js"
+       integrity="sha256-Ls0pXSlb7AYs7evhd+VLnWsZ/AqEHcXBeMZUycz/CcA="
+       crossorigin="anonymous"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/json.js"></script>
+  <script src="assets/js/source.js"></script>
+
+   </body>
+</html>

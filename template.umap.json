@@ -1,0 +1,73 @@
+{
+  "type": "umap",
+  "properties": {
+    "easing": true,
+    "embedControl": true,
+    "fullscreenControl": true,
+    "searchControl": true,
+    "datalayersControl": true,
+    "zoomControl": null,
+    "slideshow": {},
+    "captionBar": false,
+    "zoomTo": 2,
+    "limitBounds": {
+      "west": -217.61719,
+      "east": 233.4375,
+      "north": 81.72319,
+      "south": -52.48278
+    },
+    "tilelayer": {
+      "tms": false,
+      "attribution": "map data © [[http://osm.org/copyright|OpenStreetMap contributors]] under ODbL ",
+      "name": "OpenStreetMap",
+      "url_template": "//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+      "minZoom": 0,
+      "maxZoom": 19
+    },
+    "licence": "https://creativecommons.org/licenses/by/4.0/",
+    "description": "Directory for Local Nodes and Members",
+    "name": "FairCoop Directory",
+    "displayPopupFooter": false,
+    "miniMap": false,
+    "moreControl": true,
+    "scaleControl": true,
+    "scrollWheelZoom": true,
+    "zoom": 2
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      7.910156250000001,
+      40.44694705960048
+    ]
+  },
+  "layers": [
+    {
+      "type": "FeatureCollection",
+      "features": [],
+      "_storage": {
+        "displayOnLoad": true,
+        "browsable": true,
+        "name": "Local Nodes",
+        "remoteData": {
+          "format": "geojson",
+          "dynamic": true,
+          "url": "http://api.fairplayground.info/rawdata/FCLN.geo.json",
+          "licence": "https://creativecommons.org/licenses/by/4.0/",
+          "proxy": false
+        },
+        "iconClass": "Drop",
+        "showLabel": true,
+        "labelInteractive": false,
+        "labelHover": true,
+        "description": "Marker - Format\n\"Local Nodes {XX} - {City}\"\nXX = ISO 3166 \nhttps://de.wikipedia.org/wiki/ISO-3166-1-Kodierliste",
+        "color": "Grey",
+        "fillOpacity": "0.2",
+        "opacity": "0.2",
+        "fill": false,
+        "popupContentTemplate": "{{{icon}|100}}\n\nLocal Node\n# {name} ( {id} )\n**description:** \n{description}\n\n**contact:**\n{contact}\n\n**participants:** \n{participants}\n\n**establishing assembly:**\n {establishing_assembly}\n\n**assembly notes:** \n{assembly_notes}\n\n**fairnetwork profile:** \n{fairnetwork_profile}\n**OCP project profile:** \n{OCP_project_profile}\n\n**involved tags:** \n{involved_tags}",
+        "popupTemplate": "SimplePanel"
+      }
+    }
+  ]
+}
